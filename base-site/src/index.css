@@ -21,3 +21,15 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply block px-5 py-2.5 text-sm font-medium text-white transition rounded-md shadow
+  }
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500
+  }
+  .btn-secondary {
+    @apply bg-gray-800 hover:text-white/75
+  }
+}
