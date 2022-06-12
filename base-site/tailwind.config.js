@@ -39,7 +39,10 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      // theme
       primary: colors.teal,
+      secondary: colors.slate,
+      tertiary: colors.indigo,
     }),
     columns: {
       auto: 'auto',

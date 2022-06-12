@@ -4,32 +4,38 @@ body,
   height: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .btn {
-    @apply block px-5 py-2.5 text-sm font-medium text-white transition rounded-md shadow
+    @apply px-5 py-2.5 text-sm font-medium rounded-md transition shadow focus:outline-none focus:ring text-white
+  }
+  .btn-lg {
+    
   }
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-500
+    @apply bg-primary-500 hover:bg-primary-600 text-white
   }
   .btn-secondary {
-    @apply bg-gray-800 hover:text-white/75
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white
+  }
+  .btn-tertiary {
+    @apply bg-tertiary-500 hover:bg-tertiary-600 text-white
+  }
+  .btn-outline-primary,
+  .btn-outline-secondary,
+  .btn-outline-tertiary {
+    @apply bg-transparent border hover:text-white shadow-none
+  }
+  .btn-outline-primary {
+    @apply border-primary-500 text-primary-500 hover:bg-primary-500
+  }
+  .btn-outline-secondary {
+    @apply border-secondary-500 text-secondary-500 hover:bg-secondary-500
+  }
+  .btn-outline-tertiary {
+    @apply border-tertiary-500 text-tertiary-500 hover:bg-tertiary-500
   }
 }
