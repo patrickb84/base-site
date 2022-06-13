@@ -40,7 +40,7 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       // theme
-      primary: colors.teal,
+      primary: colors.sky,
       secondary: colors.slate,
       tertiary: colors.indigo,
     }),

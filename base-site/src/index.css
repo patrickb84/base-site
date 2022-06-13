@@ -10,32 +10,15 @@ body,
 
 @layer components {
   .btn {
-    @apply px-5 py-2.5 text-sm font-medium rounded-md transition shadow focus:outline-none focus:ring text-white
-  }
-  .btn-lg {
-    
+    @apply px-5 py-2.5 text-sm font-medium rounded-md transition shadow focus:outline-none text-white
   }
   .btn-primary {
-    @apply bg-primary-500 hover:bg-primary-600 text-white
+    @apply btn bg-primary-500 hover:bg-primary-600 active:bg-primary-700
   }
   .btn-secondary {
-    @apply bg-secondary-500 hover:bg-secondary-600 text-white
+    @apply btn bg-secondary-500 hover:bg-secondary-600 active:bg-secondary-700
   }
-  .btn-tertiary {
-    @apply bg-tertiary-500 hover:bg-tertiary-600 text-white
-  }
-  .btn-outline-primary,
-  .btn-outline-secondary,
-  .btn-outline-tertiary {
-    @apply bg-transparent border hover:text-white shadow-none
-  }
-  .btn-outline-primary {
-    @apply border-primary-500 text-primary-500 hover:bg-primary-500
-  }
-  .btn-outline-secondary {
-    @apply border-secondary-500 text-secondary-500 hover:bg-secondary-500
-  }
-  .btn-outline-tertiary {
-    @apply border-tertiary-500 text-tertiary-500 hover:bg-tertiary-500
+  .btn-link {
+    @apply btn bg-transparent shadow-none text-primary-500 hover:underline
   }
 }

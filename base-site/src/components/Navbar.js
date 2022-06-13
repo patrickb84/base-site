@@ -3,6 +3,8 @@ import Button from './Button'
 
 const ROUTES = [
   { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services' },
+  { name: 'Pricing', path: '/pricing' },
   { name: 'About', path: '/about' },
 ]
 
@@ -15,8 +17,8 @@ const Navbar = () => {
           <Logo />
         </Link>
 
-        <div className='flex items-center justify-end flex-1 md:justify-between'>
-          <nav className='hidden md:block' aria-labelledby='header-navigation'>
+        <div className='flex items-center justify-end flex-1 sm:justify-between'>
+          <nav className='hidden sm:block' aria-labelledby='header-navigation'>
             <h2 className='sr-only' id='header-navigation'>
               Header navigation
             </h2>
@@ -36,16 +38,11 @@ const Navbar = () => {
 
           <div className='flex items-center gap-4'>
             <div className='sm:gap-4 sm:flex'>
-              <Button link to='/' variant='primary'>
-                Button
-              </Button>
-              <Button link to='/' variant='primary'>
-                Button
-              </Button>
+              <Link to={`/contact`} className='btn-primary'>Contact</Link>
             </div>
 
             {/* toggle menu */}
-            <button className='block p-2.5 text-white bg-gray-800 rounded md:hidden hover:text-white/75 transition'>
+            <button className='block p-2.5 text-white bg-gray-800 rounded sm:hidden hover:text-white/75 transition'>
               <span className='sr-only'>Toggle menu</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
